@@ -1,5 +1,6 @@
 const keywordSet = new Set();
 
+// load data
 $.get("data/page-1.json")
 .then((data) => {
   data.forEach(({ image_url, title, description, keyword, horns }) => {
@@ -17,6 +18,7 @@ $.get("data/page-1.json")
   })
 })
 
+// event listener
 $("select").change((option) => {
   const selectedKeyword = option.target.value;
   if (selectedKeyword !== "default") {
