@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>The Gallery of Horns</title>
+    <title>Page2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/modules.css">
@@ -21,13 +21,20 @@
       <header>
         <nav>
           <ul>
-            <li><a class="active" href="#">Page1</a></li>
-            <li><a href="lab2.html">Page2</a></li>
+            <li><a href="index.html">Page1</a></li>
+            <li><a class="active" href="#">Page2</a></li>
           </ul>
         </nav>
         <h1>The Gallery of Horns</h1>
-        <select>
+        <label>Filter by</labe>
+        <select id="filter">
           <option value="default" selected="selected">Filter by Keyword</option>
+        </select>
+        <br/>
+        <label>Sort by</labe>
+        <select id="horons">
+          <option value="title" selected="selected">title</option>
+          <option value="horns" selected="selected">horns</option>
         </select>
       </header>
       <main>
